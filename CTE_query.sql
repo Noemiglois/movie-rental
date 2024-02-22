@@ -1,4 +1,4 @@
--- temporary table 1
+-- Temporary table 1
 WITH peliculas_rentadas AS (
 	SELECT pelicula_id, COUNT(fecha_renta) AS rentas_acumuladas
 	FROM inventarios
@@ -8,7 +8,7 @@ WITH peliculas_rentadas AS (
 	ORDER BY rentas_acumuladas DESC
 ), 
 
--- temporary table 2
+-- Temporary table 2
 peliculas_categoria_horror AS (
 	SELECT pelicula_id, nombre
 	FROM peliculas_categorias
